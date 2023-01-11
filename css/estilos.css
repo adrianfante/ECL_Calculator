@@ -1,0 +1,115 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Roboto', Sans-Serif;
+	font-size: .8rem;
+}
+#tlt {
+	background: round;
+	background-image: url('../assets/hsbc_banner1e.png');
+	background-size: cover;
+}
+#tlt-h {
+	background-color: #db0011;
+	text-align: center;
+	padding-top: .9rem;
+	height: 3.75rem;
+	text-align: center;
+	font-size: 1.1rem;
+}
+#tlt-h>span {
+	color:#ffffff;
+	
+}
+.filt {
+	margin: .5rem 1rem 0;
+	font-weight: bold;
+}
+.form-select {
+	width: 11rem;
+	margin: .5rem;
+	overflow-y: hidden;
+	display: relative;
+}
+#sidebar {
+	height: 100%;
+  width: 13rem;	
+	background: #f2f2f2;
+	position: fixed;
+	overflow-y: auto;
+	z-index: 2;
+	display: block;
+}
+#content {
+  position: relative;
+	width: calc(100% - 13rem);
+	margin-left: 13rem;
+	background-color: #db0011;
+}
+.centerimg {
+	position: absolute; 
+	bottom: 3%; 
+	right: 40%;
+	width: 3rem;
+	height: 2rem;
+}
+.title-d{
+	text-align:center;
+  font-size: 1.9rem;
+  padding-top: .5rem;
+  border-bottom:.5px dotted grey;
+  height: 3.75rem;
+}
+.nav-h {
+	color: #000000;
+	background-color:#FFFFFF;
+	border-bottom:.1px dotted black;
+  border-right:.1px dotted black;
+	text-align: center;
+	display: block;
+	padding: .5rem;
+}
+
+.desc {
+	padding: .5rem;
+	background-color: #f2f2f2;
+}
+.pie-contenedor {
+	display:flex;
+	flex-direction: column;
+	padding: 2rem 0;
+	width:38vw;
+	text-align: center;
+}
+.pie-contenedor>h3 {
+	width:100%;
+	/*margin: 0.5rem 16rem;*/
+}
+.pie-contenedor>div {
+	width:100%;
+}
+form>.row>.col {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+form  {
+	background-color: #f2f2f2;
+	padding: 2rem;
+	margin: 0;
+}
+h3 {
+	text-align: center;
+	color: #f2f2f2;
+}
+#tabla {
+	background-color: #f2f2f2;
+	overflow-x: scroll;
+}
+#tabla td {
+	padding: 0.5rem 1rem;
+	width: 10rem;
+}
+table {
+	width: 500vw;
+}
