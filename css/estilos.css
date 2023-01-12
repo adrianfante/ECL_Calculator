@@ -117,5 +117,23 @@ table tbody tr:hover {
 	background-color:#a2a2a2;
 	border: solid 5px;
 	border-color: #db0011;
+}
+table thead {
+	font-weight:bold;
+}
+button {
+	margin-top: 1rem;
+}
+.eliminar {
+	font-size: 1.3rem;
+	text-align: center;
+}
+.eliminar:hover {
+	color: #db0011;
+	cursor: pointer;
 
+}
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
 }

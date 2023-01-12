@@ -21,6 +21,8 @@ const ead13 = document.querySelector("#ead13");
 const ead14 = document.querySelector("#ead14");
 const ead15 = document.querySelector("#ead15");
 const results = document.querySelector("#results");
+const clear = document.querySelector("#clear");
+const eliminar = document.querySelectorAll(".eliminar");
 
 function updateTable(){
     let procDate = new Date(processDate.value);
@@ -130,3 +132,17 @@ run.addEventListener("click", (e) =>{
     e.preventDefault();
     updateTable();
 })
+clear.addEventListener("click", () => {
+    results.innerHTML = "";
+})
+//eliminar.addEventListener("click", (e) => {
+ //console.log(e);   
+//})
+let tabla = document.querySelector("#results");
+
+tabla.addEventListener("dblclick", function (event) {
+	event.target.parentNode.classList.add("fadeOut");
+	setTimeout(function (){
+		event.target.parentNode.remove();
+	},500)	
+});
