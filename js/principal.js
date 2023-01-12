@@ -49,7 +49,53 @@ function updateTable(){
                                         ECLStage2 = ECLStage2 + res2[0].PD_4.toFixed(4) * lgd * parseFloat(ead5.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -4.5);
                                         if (resMat >=6) {
                                             ECLStage2 = ECLStage2 + res2[0].PD_5.toFixed(4) * lgd * parseFloat(ead6.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -5.5);
+                                            if (resMat >=7) {
+                                                ECLStage2 = ECLStage2 + res2[0].PD_6.toFixed(4) * lgd * parseFloat(ead7.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -6.5);
+                                                if (resMat >=8) {
+                                                    ECLStage2 = ECLStage2 + res2[0].PD_7.toFixed(4) * lgd * parseFloat(ead8.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -7.5);
+                                                    if (resMat >=9) {
+                                                        ECLStage2 = ECLStage2 + res2[0].PD_8.toFixed(4) * lgd * parseFloat(ead9.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -8.5);
+                                                        if (resMat >=10) {
+                                                            ECLStage2 = ECLStage2 + res2[0].PD_9.toFixed(4) * lgd * parseFloat(ead10.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -9.5);
+                                                            if (resMat >=11) {
+                                                                ECLStage2 = ECLStage2 + res2[0].PD_10.toFixed(4) * lgd * parseFloat(ead11.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -10.5);
+                                                                if (resMat >=12) {
+                                                                    ECLStage2 = ECLStage2 + res2[0].PD_11.toFixed(4) * lgd * parseFloat(ead12.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -11.5);
+                                                                    if (resMat >=13) {
+                                                                        ECLStage2 = ECLStage2 + res2[0].PD_12.toFixed(4) * lgd * parseFloat(ead13.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -12.5);
+                                                                        if (resMat >=14) {
+                                                                            ECLStage2 = ECLStage2 + res2[0].PD_13.toFixed(4) * lgd * parseFloat(ead14.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -13.5);
+                                                                            if (resMat >=15) {
+                                                                                ECLStage2 = ECLStage2 + res2[0].PD_14.toFixed(4) * lgd * parseFloat(ead15.value) * Math.pow(1 + parseFloat(intRate.value)/100.0, -15)*(1-Math.pow((1+parseFloat(intRate.value)/100.0),-(resMat-15)))/parseFloat(intRate.value);
 
+                                                                            } else {
+                                                                                ECLStage2 = ECLStage2 + res2[0].PD_14.toFixed(4) * lgd * parseFloat(ead15.value) * (resMat - 14) * Math.pow(1 + parseFloat(intRate.value)/100.0, -15)*(1-Math.pow((1+parseFloat(intRate.value)/100.0),-(resMat-15)))/parseFloat(intRate.value);
+                                                                            }
+                                                                        } else {
+                                                                        ECLStage2 = ECLStage2 + res2[0].PD_13.toFixed(4) * lgd * parseFloat(ead14.value) * (resMat - 13) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(13+(resMat-13)/2.0));
+                                                                        }
+                                                                    } else {
+                                                                    ECLStage2 = ECLStage2 + res2[0].PD_12.toFixed(4) * lgd * parseFloat(ead13.value) * (resMat - 12) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(12+(resMat-12)/2.0));
+                                                                    }
+                                                                } else {
+                                                                ECLStage2 = ECLStage2 + res2[0].PD_11.toFixed(4) * lgd * parseFloat(ead12.value) * (resMat - 11) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(11+(resMat-11)/2.0));
+                                                                }
+                                                            } else {
+                                                            ECLStage2 = ECLStage2 + res2[0].PD_10.toFixed(4) * lgd * parseFloat(ead11.value) * (resMat - 10) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(10+(resMat-10)/2.0));
+                                                            }
+                                                        } else {
+                                                        ECLStage2 = ECLStage2 + res2[0].PD_9.toFixed(4) * lgd * parseFloat(ead10.value) * (resMat - 9) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(9+(resMat-9)/2.0));
+                                                        }
+                                                    } else {
+                                                    ECLStage2 = ECLStage2 + res2[0].PD_8.toFixed(4) * lgd * parseFloat(ead9.value) * (resMat - 8) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(8+(resMat-8)/2.0));
+                                                    }
+                                                } else {
+                                                ECLStage2 = ECLStage2 + res2[0].PD_7.toFixed(4) * lgd * parseFloat(ead8.value) * (resMat - 7) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(7+(resMat-7)/2.0));
+                                                }
+
+                                            } else {
+                                            ECLStage2 = ECLStage2 + res2[0].PD_6.toFixed(4) * lgd * parseFloat(ead7.value) * (resMat - 6) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(6+(resMat-6)/2.0));
+                                            }
                                         } else {
                                         ECLStage2 = ECLStage2 + res2[0].PD_5.toFixed(4) * lgd * parseFloat(ead6.value) * (resMat - 5) * Math.pow(1 + parseFloat(intRate.value)/100.0, -(5+(resMat-5)/2.0));
                                         }
