@@ -35,6 +35,9 @@ function updateTable(){
 
     alasql.promise('select MODEL from XLSX("data/industry.xlsx") where Local_Code = ? ', parseInt(indCode.value ))
         .then((res1) => {
+            if (res1.length == 0){
+                alert("invalid Industy Code");
+            };
             let model = res1[0].MODEL;
             alasql.promise('select PD_0, PD_1, PD_2, PD_3,PD_4, PD_5, PD_6, PD_7, PD_8, PD_9, PD_10, PD_11, PD_12, PD_13, PD_14 from XLSX("data/pds.xlsx") where MODEL = "' + model  + '" and CRR2 = "' + crr.value + '"')
                 .then((res2) => {
@@ -135,9 +138,6 @@ run.addEventListener("click", (e) =>{
 clear.addEventListener("click", () => {
     results.innerHTML = "";
 })
-//eliminar.addEventListener("click", (e) => {
- //console.log(e);   
-//})
 let tabla = document.querySelector("#results");
 
 tabla.addEventListener("dblclick", function (event) {

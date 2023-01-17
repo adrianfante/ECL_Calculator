@@ -137,3 +137,12 @@ button {
 	opacity: 0;
 	transition: 0.5s;
 }
+#left-buttons {
+	display:flex;
+	flex-direction: column;
+	margin:0;
+}
+#left-buttons a, #left-buttons button {
+	text-align:center;
+	margin:.5rem;
+}
